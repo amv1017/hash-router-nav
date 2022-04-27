@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Tour from './pages/Tour'
-import Banner from './pages/Banner'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import Home, { routes } from './pages/Home'
 
 function App() {
   return (
     <Router>
-      <Banner />
       <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route path='/:id' element={<Tour />} />
+        <Route exact path={'/'} element={<Home />} />
+        { routes.map(r => <Route exact path={r.path} element={r.element} />) }
       </Routes>
     </Router>
   )
