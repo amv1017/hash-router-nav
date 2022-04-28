@@ -22,7 +22,7 @@ export default () => {
       <br />
       <div className={styles.links}>
         {routes.map(r =>
-          <Link to={r.path} target={'_blank'}>{r.path.toUpperCase().substring(1).replace('-', ' ')}</Link>
+          <Link to={r.path} target={'_blank'}>{r.path.toUpperCase().substring(1).replaceAll('-', ' ')}</Link>
         )}
       </div>
     </div>
