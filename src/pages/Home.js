@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import About from './About'
+import ButtonPulseAnimation from './ButtonPulseAnimation'
 import TikTokLoadingAnimation from './TikTokLoadingAnimation'
 import styles from '../styles/Home.module.css'
 
@@ -10,8 +10,8 @@ export const routes = [
     element: <TikTokLoadingAnimation />
   },
   {
-    path: '/about',
-    element: <About />
+    path: '/button-pulse-animation',
+    element: <ButtonPulseAnimation />
   },
 ]
 
