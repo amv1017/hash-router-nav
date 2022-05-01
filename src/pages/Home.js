@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import ButtonPulseAnimation from './ButtonPulseAnimation'
 import TikTokLoadingAnimation from './TikTokLoadingAnimation'
+import ButtonPulseAnimation from './ButtonPulseAnimation'
+import ParticlesReactComponent from './ParticlesReactComponent'
 import styles from '../styles/Home.module.css'
 
 export const routes = [
@@ -13,6 +14,10 @@ export const routes = [
     path: '/button-pulse-animation',
     element: <ButtonPulseAnimation />
   },
+  {
+    path: '/particles-react-component',
+    element: <ParticlesReactComponent />
+  }
 ]
 
 export default () => {
