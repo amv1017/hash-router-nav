@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import TikTokLoadingAnimation from './TikTokLoadingAnimation'
 import ButtonPulseAnimation from './ButtonPulseAnimation'
 import ParticlesReactComponent from './ParticlesReactComponent'
+import FindMultipliers from './FindMultipliers'
 import styles from '../styles/Home.module.css'
 
 export const routes = [
@@ -17,6 +18,10 @@ export const routes = [
   {
     path: '/particles-react-component',
     element: <ParticlesReactComponent />
+  },
+  {
+    path: '/find-multipliers',
+    element: <FindMultipliers />
   }
 ]
 
