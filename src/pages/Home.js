@@ -4,6 +4,7 @@ import TikTokLoadingAnimation from './TikTokLoadingAnimation'
 import ButtonPulseAnimation from './ButtonPulseAnimation'
 import ParticlesReactComponent from './ParticlesReactComponent'
 import FindMultipliers from './FindMultipliers'
+import FallingLeavesAnimation from './FallingLeavesAnimation'
 import styles from '../styles/Home.module.css'
 
 export const routes = [
@@ -22,7 +23,11 @@ export const routes = [
   {
     path: '/find-multipliers',
     element: <FindMultipliers />
-  }
+  },
+  {
+    path: '/falling-leaves-animation',
+    element: <FallingLeavesAnimation />
+  },
 ]
 
 export default () => {

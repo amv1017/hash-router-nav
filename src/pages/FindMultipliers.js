@@ -4,6 +4,11 @@ import styles from '../styles/FindMultipliers.modules.css'
 export default () => {
   const [state, setState] = useState([])
 
+  /*
+    1119824 = 2 x 2 x 2 x 2 x 17 x 23 x 179
+    1119825 = 3 x 3 x 3 x 3 x 5 x 5 x 7 x 79
+  */
+
   const splitByMultipliers = (n) => {
     let r = [], i = 2
     while (n > 1) {
