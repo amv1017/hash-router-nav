@@ -1,8 +1,5 @@
-body {
-  font-family: 'Segoe UI';
-}
-
 .container {
+  font-family: 'Segoe UI';
   height: 100vh;
   background: #eee;
   overflow: hidden;

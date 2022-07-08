@@ -5,6 +5,7 @@ import ButtonPulseAnimation from './ButtonPulseAnimation'
 import ParticlesReactComponent from './ParticlesReactComponent'
 import FindMultipliers from './FindMultipliers'
 import FallingLeavesAnimation from './FallingLeavesAnimation'
+import GooeyEffectSVGFilter from './GooeyEffectSVGFilter'
 import styles from '../styles/Home.module.css'
 
 export const routes = [
@@ -27,6 +28,10 @@ export const routes = [
   {
     path: '/falling-leaves-animation',
     element: <FallingLeavesAnimation />
+  },
+  {
+    path: '/gooey-effect-svg-filter',
+    element: <GooeyEffectSVGFilter />
   },
 ]
 
